@@ -10,8 +10,9 @@ export const Color = () => {
     <div className="flex flex-col gap-5">
       <p>color</p>
       <div className="flex flex-row gap-2">
-        {productColors.map(([color, focus, text]) => (
+        {productColors.map(([color, focus, text], index) => (
           <input
+            key={index}
             id={`color-${color}`}
             aria-describedby={`color-${color}-description`}
             name={`color-${color}`}

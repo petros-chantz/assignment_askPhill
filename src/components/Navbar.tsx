@@ -11,8 +11,11 @@ export const Navbar = () => {
         <h2 className="self-center font-medium text-white">miista</h2>
         <div className="flex-row self-center hidden gap-5 md:gap-10 lg:flex">
           {["shop", "e8 by miinsta", "stories", "about", "journal"].map(
-            (keyword) => (
-              <p className="text-white cursor-pointer hover:underline">
+            (keyword, index) => (
+              <p
+                key={index}
+                className="text-white cursor-pointer hover:underline"
+              >
                 {keyword}
               </p>
             )

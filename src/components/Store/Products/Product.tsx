@@ -1,11 +1,6 @@
-export const Product = (props: any) => {
-  const productColors: string[] = [
-    "bg-red-300",
-    "bg-sky-300",
-    "bg-amber-300",
-    "bg-green-300",
-  ];
+import { productColors } from "../../../interfaces/Interfaces";
 
+export const Product = (props: any) => {
   return (
     <div className="flex flex-col h-full gap-3">
       <div

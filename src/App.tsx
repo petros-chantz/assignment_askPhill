@@ -14,8 +14,8 @@ export const App = () => {
     return (
       <React.Fragment>
         <Navbar />
-        <section className="flex justify-center gap-10 h-screen mb-20 bg-white">
-          <h1>Sorry, something is wrong :(</h1>
+        <section className="flex justify-center gap-10 h-screen self-center mb-20 bg-white">
+          <h2 className="self-center">Sorry, something is wrong :(</h2>
         </section>
         <Footer />
       </React.Fragment>
@@ -41,8 +41,8 @@ export const App = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <section className="flex justify-center gap-10 h-screen mb-20 bg-white">
-        <h1>Sorry, we couldn't load any products :(</h1>
+      <section className="flex justify-center gap-10 h-screen self-center mb-20 bg-white">
+        <h2 className="self-center">Sorry, we couldn't load any products :(</h2>
       </section>
       <Footer />
     </React.Fragment>

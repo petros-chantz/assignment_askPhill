@@ -1,4 +1,4 @@
-import { filters } from "../../../interfaces/Filters";
+import { filters } from "../../../interfaces/Interfaces";
 
 export const Price = () => {
   return (
