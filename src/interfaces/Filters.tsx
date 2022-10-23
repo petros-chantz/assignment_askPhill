@@ -1,6 +1,6 @@
 interface FilterProperties {
   price: any;
-  category: any;
+  material: any;
 }
 
 export const filters: FilterProperties = {
@@ -10,11 +10,11 @@ export const filters: FilterProperties = {
     { value: "50", label: "$300 - $400", checked: false },
     { value: "75", label: "500+", checked: false },
   ],
-  category: [
-    { value: "all-new-arrivals", label: "All New Arrivals", checked: false },
-    { value: "tees", label: "Tees", checked: false },
-    { value: "objects", label: "Objects", checked: false },
-    { value: "sweatshirts", label: "Sweatshirts", checked: false },
-    { value: "pants-and-shorts", label: "Pants & Shorts", checked: false },
+  material: [
+    { value: "soft", label: "soft", checked: false },
+    { value: "cotton", label: "cotton", checked: false },
+    { value: "wood", label: "wood", checked: false },
+    { value: "plastic", label: "plastic", checked: false },
+    { value: "bronze", label: "bronze", checked: false },
   ],
 };

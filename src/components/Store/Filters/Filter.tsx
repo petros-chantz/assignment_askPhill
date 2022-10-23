@@ -1,4 +1,5 @@
 import { Color } from "./Color";
+import { Material } from "./Material";
 import { Price } from "./Price";
 
 export const Filter = () => {
@@ -7,6 +8,7 @@ export const Filter = () => {
       <h2>Filter</h2>
       <Color />
       <Price />
+      <Material />
     </div>
   );
 };

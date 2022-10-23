@@ -18,7 +18,7 @@ export const Product = (props: any) => {
           <p>{props.products.name}</p>
           <p>${props.products.price}</p>
         </div>
-        <p className="keyword">{props.products.department}</p>
+        <p className="keyword">{props.products.material}</p>
       </div>
     </div>
   );
