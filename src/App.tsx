@@ -25,9 +25,9 @@ export const App = () => {
     return (
       <React.Fragment>
         <Navbar />
-        <section className="flex flex-row gap-10 mb-20 bg-white">
+        <section className="flex lg:flex-row flex-col gap-10 mb-20 bg-white">
           <Filter />
-          <section className="w-5/6 grid grid-cols-3 gap-y-10 py-10 px-10 gap-x-20">
+          <section className="w-5/6 grid grid-cols-1 self-center lg:grid-cols-3 gap-y-10 py-10 px-10 gap-x-20">
             {data.map((products: any, index: any) => (
               <Product products={products} key={index} />
             ))}
