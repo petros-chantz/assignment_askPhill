@@ -9,7 +9,7 @@ export const Newsletter = () => {
         <input
           type="text"
           aria-label="email input"
-          className="self-center text-black uppercase placeholder:font-light placeholder:text-black focus:ring-white w-80 bg-beige"
+          className="self-center text-black uppercase placeholder:font-light border-none placeholder:text-black focus:ring-white w-80 bg-beige"
           placeholder="your email"
         />
         <p className="self-center">subscribe</p>
