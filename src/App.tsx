@@ -1,9 +1,9 @@
-import axios from "axios";
 import useSWR from "swr";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer/Footer";
 import React from "react";
 import { Filter } from "./components/Store/Filters/Filter";
+import { Product } from "./components/Store/Products/Product";
 
 export const App = () => {
   const url = "https://6354eaa3da523ceadcf64ca5.mockapi.io/assignment/products";
@@ -27,11 +27,9 @@ export const App = () => {
         <Navbar />
         <section className="flex flex-row gap-10 mb-20 bg-white">
           <Filter />
-          <section className="w-5/6 grid grid-cols-2 gap-y-4 py-10 px-10 gap-x-10">
+          <section className="w-5/6 grid grid-cols-3 gap-y-10 py-10 px-10 gap-x-20">
             {data.map((products: any, index: any) => (
-              <div>
-                <p>{products.name}</p>
-              </div>
+              <Product products={products} key={index} />
             ))}
           </section>
         </section>
